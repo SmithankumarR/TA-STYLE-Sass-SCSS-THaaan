@@ -1,0 +1,303 @@
+
+%font-Weight {
+    font-weight: 900;
+}
+
+// Top Navigation
+
+.top-nav {
+    padding: 1rem 0;
+   background-color: $primary;
+
+    ul > li > a{
+        color: $textWhite;
+        
+    }
+    ul > li {
+        margin-right: 1rem;
+    } 
+}
+
+// Bottom Navigation
+
+.bottom-nav {
+    height: 6rem;
+    background-color: rgb(242,242,242);
+    .logo {
+        font-size: 1.5rem;
+        @extend %font-Weight;
+        color: $tertiary;
+        .pink {
+            color: $primary;
+        }
+    
+    }   
+
+    #toggle, .bars {
+        display: none;
+    }
+    .main-menu  {
+         height: 100%;
+        .sub-menu {
+            // background-color: yellow;
+            height: 100%;
+            padding: 2.2rem 1rem;
+            margin-left: 1rem;
+            display: inline-block;
+            position: relative;
+
+            i {
+                margin-left: .5rem;
+            }
+            .white {
+                color: $textWhite;
+            }
+            a {
+                display: block;
+                color: $tertiary;
+                font-weight: 600;
+            }
+            ul {
+                position: absolute;
+                display: none;
+                 padding: .5rem 2rem;
+                 border-bottom-left-radius: .3rem;
+                 border-bottom-right-radius: .3rem;
+                z-index: 10;
+                 li {
+                     padding: .5rem 0;
+                     width: 120px;
+
+                     a {
+                        padding: .5rem .5rem;
+                     }
+                 }
+            }
+
+            &:hover {
+                background-color: rgb(235,95,97);
+                > a {
+                    color: $textWhite;
+                }
+            }
+            &:hover ul{
+                display: block;
+                background-color: rgb(242,242,242);
+                top: 5.8rem;
+                left: 0;
+                
+                li > a:hover {
+                    background-color: rgb(172, 164, 164);
+                    color: $primary;
+                    border-radius: .4rem;
+                }
+            }
+                
+            }
+        }
+    }
+    
+
+
+// Hero 
+
+.hero {
+    background: url("/assets/media/banner-1.jpg") center center no-repeat;
+    background-size: cover;
+    height: 120vh;
+    position: relative;
+
+    .hero-sub-container {
+        position: absolute;
+        //  background-color: yellow;
+        left: 7%;
+        top: 35%;
+        .sub-heading {
+            font-size: 3rem;
+            @extend %font-Weight;
+            margin-bottom: .8rem;
+        }
+        p {
+            font-weight: 600;
+            font-size: 1.1rem;
+           margin-bottom: 1.2rem;
+        }
+    }
+    
+}
+
+// Services
+
+.services {
+
+    h3 {
+        font-size: 2rem;
+        @extend %font-Weight;
+        margin-bottom: .8rem;
+    }
+     p {
+         margin-bottom: 5rem;
+     }
+
+    .list {
+         text-align: center;
+         box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+         padding: 2.5rem;
+         border-radius: .4rem;
+        img {
+            max-width: 4rem;
+            
+        }
+        h4 {
+            margin: 1rem 0 .5rem 0;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+        p {
+            line-height: 1.7;
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+// Solution
+
+.solution {
+
+    .solution-sec {
+        background-color: rgb(241, 243, 245);
+        padding: 5rem 0;
+        h3 {
+            font-size: 2rem;
+            @extend %font-Weight;
+            margin-bottom: 1rem;
+        }
+        p {
+            margin-bottom: 2.2rem;
+        }
+    }
+
+    article {
+        padding: 5rem 0; 
+    }
+    article .box1 {
+        
+        align-self: flex-start;
+        img {
+            max-width: 4rem;
+            object-fit: cover;
+        }
+
+        h4 {
+            margin: 1.2rem 0;
+            font-size: 1.7rem;
+            @extend %font-Weight;
+        }
+        
+        p {
+            margin-bottom: 1.5rem;
+        }
+    }
+
+}
+
+//Banner
+
+.banner {
+    background-color: $primary;
+    padding: 4rem 0;
+    div {
+        color: $textWhite;
+        h4 {
+            font-weight: 500;
+            font-size: 1.3rem;
+            margin-bottom: .7rem;
+        }
+    }
+}
+
+
+// Features
+
+.features {
+
+    padding-top: 4rem;
+    .sec1 {
+        h5 {
+            font-size: 1.6rem;
+            @extend %font-Weight;
+            margin-bottom: 1.2rem;
+        }
+    }
+
+}
+
+// Clients 
+
+.clients {
+    background-color: rgb(242,242,242);
+    h3 {
+        font-size: 2rem;
+        @extend %font-Weight;
+        margin-bottom: 2rem;
+    }
+    .img-container img {
+        filter: grayscale(100%);
+        opacity: .4;
+
+        &:hover {
+            filter: grayscale(0%);
+            opacity: 1;
+        }
+    }
+}
+
+// Footer
+
+footer {
+    background-color: $secondary;
+    color:  $textWhite;
+
+
+    .col {
+        h5 {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            font-weight: 500;
+        }
+
+        ul > li {
+            margin: .5rem 0;
+        }
+        ul > li > a {
+            color:  $textWhite;
+            font-weight: 200;
+        }
+        .contact-details {
+
+            li {
+                margin-bottom: 1rem;
+            }
+            li address i {
+                margin-right: .5rem;
+            }
+            li a i {
+                margin-right: .5rem;
+            }  
+        }
+
+        .social li {
+            margin-right: 1rem;
+        }
+    }
+
+    .footer-bottom {
+        padding-bottom: 4rem;
+        font-weight: 200;
+    }
+}
+
+
+
+
+

@@ -1,0 +1,169 @@
+
+// Custom Styles
+
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    line-height: 1.5;
+    font-family: 'Archivo', sans-serif;
+    font-size: 1rem;
+    color: $tertiary;
+    //  padding-bottom: 10rem;
+}
+
+// Container
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+     padding: 0 2rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.font0 {
+    font-size: 0;
+}
+
+.imgFull{
+    width: 100%;
+}
+
+// Flex
+
+.flex {
+    display: flex;
+}
+
+.jcb {
+    justify-content: space-between;
+}
+
+.aic {
+    align-items: center;
+}
+
+.jcc {
+    justify-content: center;
+}
+
+.jce {
+    justify-content: space-evenly;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.flex-30 {
+    flex: 0 1 31.5%;
+}
+
+.flex-45 {
+    flex: 0 1 47%;
+}
+
+.flex-40 {
+    flex: 0 1 40%;
+} 
+.flex-20 {
+    flex: 0 1 20%;
+}
+.flex-35 {
+    flex: 0 1 35%;
+}
+
+.flex-60 {
+    flex: 0 1 60%;
+}
+
+.flex-15 {
+    flex: 0 1 15%;
+}
+.flex-50 {
+    flex: 0 1 50%;
+}
+.flex-23 {
+    flex: 0 1 23%;
+}
+// General Styles
+
+.upper {
+    text-transform: uppercase;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.active {
+    background-color: rgb(235,95,97);
+    
+}
+
+.btn {
+    padding: .5rem 1.1rem;
+    border-radius: 1rem;
+    
+    &-primary {
+        background-color: $primary;
+        color: $textWhite;
+        &:hover {
+            background-color: $textWhite;
+            border: 1px solid $primary;
+            color: $primary;
+        }
+    }
+
+    &-secondary {
+        border: 1px solid $primary;
+        color: $primary;
+        &:hover {
+            background-color: $primary;
+            border: none;
+            color: $textWhite;
+        }
+    }
+    &-tertiary {
+        border: 1px solid $textWhite;
+        color: $textWhite;
+        &:hover {
+            background-color: $textWhite;
+            border: none;
+            color: $primary;
+        }
+    }
+    
+}
+
+.padding {
+    padding: 5rem 0;
+}
+
+.margin {
+    margin: 5rem 0;
+}
+p {
+    font-weight: 300;
+}
+
+.pink-btn {
+    background-color: $primary;
+    color: $textWhite;
+}

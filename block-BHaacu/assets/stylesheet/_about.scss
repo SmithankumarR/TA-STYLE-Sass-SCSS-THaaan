@@ -1,0 +1,86 @@
+
+
+// Banner
+
+.banner {
+    background-color: $primary;
+    color: $textWhite;
+
+    h1 {
+        font-size: 2.5rem;
+        font-weight: 900;
+    }
+}
+
+//features 
+
+
+.sec {
+    h6 {
+        color: $primary;
+        font-weight: 600;
+        margin-bottom: .7rem;
+    }
+    .sec2 img {
+        object-fit: cover;
+    }
+}
+
+// Values
+
+.sub-value {
+    
+    margin-bottom: 4rem;
+    i {
+        font-size: 3rem;
+        margin-right: 1.5rem;
+    }
+
+    h4 {
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-bottom: .8rem;
+    }
+}
+
+//Team
+
+.team {
+    background-color: $fourth;
+    h3 {
+        font-size: 2rem;
+        font-weight: 900;
+        margin-bottom: 1rem;
+    }
+    p {
+        font-weight: 600;
+        font-size: 1.1rem;
+    }
+
+    .team-container {
+        margin-top: 2.2rem;
+        padding-bottom: 2rem;
+        .team-img {
+            background-color: $textWhite;
+            padding-bottom: 1.5rem;
+            h5 {
+                margin: .5rem;
+                font-size: 1.1rem;
+                font-weight: 600;
+            }
+            h6 {
+                color: $primary;
+                font-size: .8rem;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+// Solution 
+
+.about-solution {
+    .solution-sec {
+        background-color: $textWhite;
+    }
+}
