@@ -1,0 +1,35 @@
+
+%font-weight {
+    font-weight: 900;
+}
+.error {
+    h3 {
+        @extend %font-weight;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+}
+
+.contact {
+    padding-top: 4rem;
+
+    .circle {
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50%;
+        background-color: $fourth;
+        
+        i {
+            font-size: 1.8rem;
+            color: $primary;
+        }
+    }
+
+    .contact-list {
+        h5 {
+            margin: 1rem 0 .5rem 0;
+            font-weight: 600;
+        }
+    }
+    
+}
