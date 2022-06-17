@@ -1,0 +1,66 @@
+///// nav menu ////
+.navmenu{
+    background-color: $pri;
+    color:$sec;
+    font-size:1rem;
+}
+.info i{
+margin:0 0.5rem;
+}
+.social-media-icons{
+    margin-left: 1.5rem;
+    font-size: 1.2rem;
+}
+
+  ///////// navbar /////
+.hero{
+    background-color: $bg;
+    padding: 0.5rem;
+    position: relative;
+}
+.logo{
+    font-size: 2rem;
+    font-weight: 800;
+}
+.logo span {
+    color: $pri;
+    margin-right: 0.5rem;
+}
+.navbar-menu a{
+text-decoration: none;
+color: $text_dark;
+text-transform: capitalize;
+font-size: 1rem;
+font-weight: 550;
+margin-left: 1rem;
+&:hover {
+    background-color:#EB5F61;
+    padding: 1.4rem;
+    color: $sec;
+}
+}
+#active{
+    background-color:#EB5F61;
+    padding: 1.4rem;
+    color: $sec;
+}
+.navbar-menu li > span {
+margin-left: 0.75rem;
+}
+
+// hero content //
+.hero-content{
+    position: absolute;
+    top:16rem;
+    left:22rem;
+}
+.hero-heading{
+    font-size: 3.4rem;
+    text-transform: uppercase;
+    font-weight:900;
+}
+.hero-content h5{
+    text-transform: capitalize;
+    margin: 1rem 0;
+    font-size: 1rem;
+}
